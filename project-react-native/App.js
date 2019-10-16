@@ -6,7 +6,6 @@ import { AppLoading } from "expo";
 import GeneralStatusBarColor from "./components/GeneralStatusBarColor";
 import * as Font from "expo-font";
 import { Ionicons } from "@expo/vector-icons";
-
 import DrawerNavigator from "./navigation/DrawerNavigator";
 import { styles } from "./style";
 import { Root } from "native-base";

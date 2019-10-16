@@ -22,7 +22,8 @@ import {
   Right,
   Toast
 } from "native-base";
-import moment from "moment"
+import moment from "moment";
+import { LinearGradient } from 'expo-linear-gradient';
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { getBook, putBook } from "../../actions/book";
@@ -149,8 +150,7 @@ class BookDetail extends Component {
                 ref="birthDate"     
               /> */}
                 <Animatable.View animation="pulse">
-                  <Button bordered primary style={styles.buttonSave} onPress={ () => {    
-                    const deletingRow = this.state.activeRowKey;          
+                  <Button transparent style={styles.buttonSave} onPress={ () => {       
                     Alert.alert(
                         'Warning!',
                         ' Are you sure you want to Update ? ',
@@ -165,7 +165,18 @@ class BookDetail extends Component {
                         ],
                         { cancelable: true }
                     )}}>
-                    <Text style={styles.textSave}>save</Text>
+                    <LinearGradient
+                    colors={['#7f8c8d', 'transparent']}
+                    style={{ padding: 15, alignItems: 'center', borderRadius: 200, marginBottom: 20 }}>
+                    <Text
+                      style={{
+                        backgroundColor: 'transparent',
+                        fontSize: 15,
+                        color: '#fff',
+                      }}>
+                      SAVE
+                    </Text>
+                  </LinearGradient>
                   </Button>
                 </Animatable.View>
             </Form>

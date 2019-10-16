@@ -20,7 +20,7 @@ import { filterFetch } from "../utils/apiUtils"
 
 function* getAllBooks() {
   try {
-    const data = yield filterFetch('http://192.168.1.31:8080/buku/', {
+    const data = yield filterFetch('http://192.168.1.15:8080/buku/', {
       method: 'GET',
       headers: { 'Content-Type': 'application/json'},
     });
@@ -38,7 +38,7 @@ function* getAllBooks() {
 
 function* getBook(action) {
   try {
-    const data = yield filterFetch('http://192.168.1.31:8080/buku/'+action.id, {
+    const data = yield filterFetch('http://192.168.1.15:8080/buku/'+action.id, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json'},
     });
@@ -56,7 +56,7 @@ function* getBook(action) {
 
 function* putBook(action) {
   try {
-    const data = yield filterFetch('http://192.168.1.31:8080/buku/'+action.id, {
+    const data = yield filterFetch('http://192.168.1.15:8080/buku/'+action.id, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json'},
       body: JSON.stringify(action.data)
@@ -79,7 +79,7 @@ function* putBook(action) {
 
 function* postBook(action) {
   try {
-    const data = yield filterFetch('http://192.168.1.31:8080/buku/', {
+    const data = yield filterFetch('http://192.168.1.15:8080/buku/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json'},
       body: JSON.stringify(action.data)
@@ -103,7 +103,7 @@ function* postBook(action) {
 
 function* deleteBook(action) {
   try {
-    const data = yield filterFetch('http://192.168.1.31:8080/buku/'+action.id, {
+    const data = yield filterFetch('http://192.168.1.15:8080/buku/'+action.id, {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json'},
     });

@@ -88,7 +88,7 @@ class BookScreen extends Component {
     return (
       <View key={"item-" + index}
       onPress={() => this.showDetail(data.id)}>
-        <Swipeout {...swipeSettings}>
+        <Swipeout {...swipeSettings} style={styles.swipeout}>
           <ListItem thumbnail>
             <Animatable.View animation="rubberBand">
               <Left>
@@ -120,7 +120,7 @@ class BookScreen extends Component {
   render() {
     return (
       <Container>
-        <Header>
+        <Header style={styles.headerNav}>
           <MenuButton navigation={this.props.navigation} />
           <Text style={styles.header}>Books</Text>
         </Header>

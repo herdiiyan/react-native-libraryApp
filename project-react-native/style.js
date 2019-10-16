@@ -3,6 +3,9 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  headerNav: {
+    backgroundColor: "#192a56"
+  },
   headerHome: {
     fontWeight: "bold",
     justifyContent: "center"
@@ -67,7 +70,8 @@ export const styles = StyleSheet.create({
   buttonSave: {
     justifyContent: "center",
     marginTop: 20,
-    marginBottom: 20
+    marginBottom: 20,
+    borderRadius: 200
   },
   textSave:{
     color: "#7f8c8d"
@@ -78,7 +82,7 @@ export const styles = StyleSheet.create({
   bodyDetailBook: {
     flex: 1,
     justifyContent: "center",
-    backgroundColor: "#bdc3c7",
+    backgroundColor: "#fff",
     paddingLeft: 60,
     paddingRight: 60
   },
@@ -90,5 +94,8 @@ export const styles = StyleSheet.create({
     borderBottomColor: "#7f8c8d",
     borderBottomWidth: 1,
     marginTop: 50
+  },
+  swipeout: {
+    backgroundColor: "#fff"
   }
 });

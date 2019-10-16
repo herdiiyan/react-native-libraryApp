@@ -9,7 +9,7 @@ export default class HomeScreen extends Component {
   render() {
     return (
       <Container>
-        <Header>
+        <Header style={styles.headerNav}>
           <MenuButton navigation={this.props.navigation} />
           <View style={styles.headerHome}>
             <Icon name="home">
