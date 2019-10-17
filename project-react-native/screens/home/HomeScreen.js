@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 import { styles } from "../../style";
-import { Container, Header, Text, Icon, Body } from "native-base";
-import { View } from "react-native";
+import { Container, Header, Icon, Body, Card, CardItem } from "native-base";
+import { View, ImageBackground, Text } from "react-native";
 import MenuButton from "../../components/MenuButton";
 
 export default class HomeScreen extends Component {
@@ -12,18 +12,14 @@ export default class HomeScreen extends Component {
         <Header style={styles.headerNav}>
           <MenuButton navigation={this.props.navigation} />
           <View style={styles.headerHome}>
-            <Icon name="home">
-              <Text> HOME </Text>
+            <Icon style={styles.headerText} name="home">
+              <Text style={styles.headerText}> HOME </Text>
             </Icon>
           </View>
         </Header>
-        <Body>
-          <View style={styles.bodyHome}>
-            <Text style={{ fontSize: 25, fontWeight: "bold" }}>
-              Wellcome to My Application
-            </Text>
-          </View>
-        </Body>
+        <View style={{ marginLeft: 60, top: -250 }}>
+          <ImageBackground resizeMode={'center'} source={require('../../assets/story.png')} style={{width: "90%", height: "100%"}}/>
+        </View>
       </Container>
     );
   }

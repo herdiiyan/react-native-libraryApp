@@ -8,18 +8,24 @@ export const styles = StyleSheet.create({
   },
   headerHome: {
     fontWeight: "bold",
-    justifyContent: "center"
+    justifyContent: "center",
+    color: "#fff"
   },
   header: {
     justifyContent: "center",
     fontWeight: "bold",
-    top: 16
+    top: 16,
+    color: "#fff"
+  },
+  headerText: {
+    color: "#fff"
   },
   menuIcon: {
     zIndex: 9,
     position: "absolute",
     top: 12,
-    left: 20
+    left: 20,
+    color: "#fff"
   },
   profile: {
     flex: 1,
