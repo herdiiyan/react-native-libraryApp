@@ -20,7 +20,7 @@ export default class MenuDrawer extends React.Component {
       <Drawer ref={ref => (this._drawer = ref)}>
         <ImageBackground
           style={styles.stretch}
-          source={require("../assets/DrawerBg.jpg")}
+          source={require("../assets/imgs/DrawerBg.jpg")}
         >
           <View style={styles.profile}>
             <View style={styles.profileText}>

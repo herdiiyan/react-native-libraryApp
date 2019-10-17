@@ -22,6 +22,7 @@ import {
   Right,
   Toast
 } from "native-base";
+import { LinearGradient } from 'expo-linear-gradient';
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { postBook } from "../../actions/book";
@@ -98,8 +99,19 @@ class BookPost extends Component {
                   <Input onChangeText={(stok) => this.setState({stok})} />
                 </Item>
                   <Animatable.View animation="pulse">
-                    <Button bordered primary style={styles.buttonSave} onPress={ () => this.save() }>
-                      <Text>Save</Text>
+                    <Button transparent style={styles.buttonSave} onPress={ () => this.save() }>
+                    <LinearGradient
+                    colors={['#192a56', 'transparent']}
+                    style={{ padding: 15, alignItems: 'center', borderRadius: 200, marginBottom: 20, marginTop: 40 }}>
+                    <Text
+                      style={{
+                        backgroundColor: 'transparent',
+                        fontSize: 15,
+                        color: '#fff',
+                      }}>
+                      SAVE
+                    </Text>
+                  </LinearGradient>
                     </Button>
                   </Animatable.View>
               </Form>

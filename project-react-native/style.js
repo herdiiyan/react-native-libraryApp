@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   headerNav: {
-    backgroundColor: "#192a56"
+    backgroundColor: "#5758BB"
   },
   headerHome: {
     fontWeight: "bold",
@@ -12,20 +12,19 @@ export const styles = StyleSheet.create({
     color: "#fff"
   },
   header: {
-    justifyContent: "center",
+    alignContent: "center",
     fontWeight: "bold",
     top: 16,
-    color: "#fff"
   },
   headerText: {
-    color: "#fff"
+    color: "#fff",
+    fontSize: 16
   },
   menuIcon: {
     zIndex: 9,
     position: "absolute",
     top: 12,
     left: 20,
-    color: "#fff"
   },
   profile: {
     flex: 1,
@@ -92,9 +91,18 @@ export const styles = StyleSheet.create({
     paddingLeft: 60,
     paddingRight: 60
   },
+  headerBook: {
+    fontSize: 24,
+    color: "#192a56",
+    borderBottomColor: "#7f8c8d",
+    borderBottomWidth: 1,
+    marginTop: 50,
+    marginLeft: 60,
+    marginRight: 60
+  },
   headerDetailBook: {
     fontSize: 24,
-    color: "#7f8c8d",
+    color: "#192a56",
     paddingBottom: 10,
     marginBottom: 40,
     borderBottomColor: "#7f8c8d",

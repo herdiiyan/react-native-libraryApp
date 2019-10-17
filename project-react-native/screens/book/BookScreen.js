@@ -92,7 +92,7 @@ class BookScreen extends Component {
           <ListItem thumbnail>
             <Animatable.View animation="rubberBand">
               <Left>
-                <Thumbnail square source={require("../../assets/books.png")} />
+                <Thumbnail square source={require("../../assets/imgs/books.png")} />
               </Left>
             </Animatable.View>
             <Body>
@@ -120,15 +120,13 @@ class BookScreen extends Component {
   render() {
     return (
       <Container>
-        <Header style={styles.headerNav}>
           <MenuButton navigation={this.props.navigation} />
-          <Text style={styles.header}>Books</Text>
-        </Header>
+          <Text style={styles.headerBook}>Books</Text>
         <Content refreshControl={<RefreshControl refreshing={this.props.loading} onRefresh={() => this.onReload()}/>}>
             {this.props.books.map((data, index) => this.renderListItem(data, index))}
         </Content>
           <Fab
-            style={{ backgroundColor: '#5067FF' }}
+            style={{ backgroundColor: '#192a56' }}
             position="bottomRight"
             onPress={() => this.showForm()}>
             <Icon name="plus" type="FontAwesome5" />

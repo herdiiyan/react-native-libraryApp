@@ -166,8 +166,8 @@ class BookDetail extends Component {
                         { cancelable: true }
                     )}}>
                     <LinearGradient
-                    colors={['#7f8c8d', 'transparent']}
-                    style={{ padding: 15, alignItems: 'center', borderRadius: 200, marginBottom: 20 }}>
+                    colors={['#192a56', 'transparent']}
+                    style={{ padding: 15, alignItems: 'center', borderRadius: 200, marginBottom: 20, marginTop: 40 }}>
                     <Text
                       style={{
                         backgroundColor: 'transparent',
