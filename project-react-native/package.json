@@ -12,7 +12,7 @@
     "expo-font": "^7.0.0",
     "expo-linear-gradient": "~7.0.0",
     "galio-framework": "^0.6.3",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "native-base": "^2.13.8",
     "react": "16.8.3",
     "react-dom": "16.8.3",
